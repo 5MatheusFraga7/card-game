@@ -1,5 +1,10 @@
-package 'main'
+package main
 
 func main() {
-	return true
+	cards := newDeck()
+
+	hand, remainingCards := deal(cards, 5)
+
+	hand.print()
+	remainingCards.print()
 }
